@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* GENERAL RULES */
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.flex{
+  display: flex;
+}
+
+
+
+
+.menu{
+  position: fixed;
+  margin: 0%;
+  width: 100%;
+  height: 60px;
+  background-color: #FF6900;
+}
+header .menu.flex{
+  justify-content: space-around;
+  align-items: center;
+}
+.link-menu a img{
+  width: 150px;
+}
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+main{
+  padding-top: 60px;
+}
