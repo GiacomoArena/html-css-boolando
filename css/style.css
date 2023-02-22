@@ -11,7 +11,9 @@ body{
 .flex{
   display: flex;
 }
-
+.absolute{
+  position: absolute;
+}
 
 
 
@@ -38,22 +40,102 @@ header a{
 /* MAIN RULES */
 .card{
   position: relative;
+  width: 350px;
+  height: 600px;
+  cursor: pointer;
 }
+#img-2{
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 500px;
+}
+.card:hover #img-2{
+  display:inline-block;
+}
+.card:hover #img-1{
+  display: none;
+}
+
 .sconto{
-position: absolute;
-bottom: 40px;
-left: 0;
+  z-index: 5;
+  bottom: 20%;
+  left: 0;
+  background-color: #FF0000;
+  color: white;
+  font-size: 12px;
+  padding: 0 2%;
 
 }
 .sostenibilità{
-  position: absolute;
-  bottom: 40px;
-  left: 50px
+  z-index: 5;
+  bottom: 20%;
+  left: 15%;
+  background-color: #008000;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 2%;
+  margin: 0 -5px;
+  text-transform: capitalize;
+}
+.sostenibilità-6b{
+  z-index: 5;
+  bottom: 20%;
+  left: 0%;
+  background-color: #008000;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 0 5px;
+
 }
 .heart{
-  position: absolute;
-  top: 0px;
-  right: 20px;
+  z-index: 5;
+  top: 10px;
+  right: 0px;
+  background-color: white;
+  font-size: 25px;
+  text-align: center;
+  width: 40px;
+}
+.heart:hover{
+  color: #FF0000;
+}
+.brand{
+  bottom: 13%;
+  left: 0;
+  font-size: 13px;
+  color: rgba(24, 24, 24, 0.942);
+
+}
+.descrizione{
+  bottom: 10%;
+  left: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.prezzo-1{
+  bottom: 7%;
+  left: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+}
+.prezzo-2{
+  bottom: 7%;
+  left: 16%;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(24, 24, 24, 0.942);
+}
+.prezzo-2{
+  bottom: 7%;
+  left: 16%;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(24, 24, 24, 0.942);
 }
 
 main{
@@ -63,7 +145,6 @@ main{
   width: 70%;
   max-width: 1200px;
   margin: 50px auto;
-  line-height: 60px;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -71,4 +152,10 @@ main{
   width: 350px;
   height: 500px;
 }
+.card-b img{
+  width: 350px;
+  height: 500px;
 
+}
+
+/* FOOTER RULES  */
